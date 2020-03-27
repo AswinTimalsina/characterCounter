@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import AppInput from './AppInput';
+import ValidationComponent from './ValidationComponent';
 
 class App extends Component {
 
@@ -18,7 +19,11 @@ this.setState({count: newCount})
   render(){
   return (
     <div>
-      <AppInput changeLength={(event) => this.textChangeHandler(event)} length={this.state.count}/>
+      <AppInput changeLength={(event) => this.textChangeHandler(event)} length={this.state.count}>
+      <ValidationComponent length={this.state.count}/>
+
+      </AppInput>
+
     </div>
   );
 }}
