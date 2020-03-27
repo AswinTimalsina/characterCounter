@@ -15,3 +15,17 @@
 .heading{
     text-decoration: underline;
 }
+
+.charComp{
+    display: inline-block;
+    padding: 16px;
+    text-align: center;
+    margin: 16px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.blockBox{
+    width: 800px;
+    text-align: center;
+}

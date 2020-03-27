@@ -8,7 +8,7 @@ render(){
         <div className='block'>
             <p className='heading'>NUMBER OF CHARACTERS COUNTER</p>
     <p>No. of text: {this.props.length}</p>
-        <input type="text" onChange={this.props.changeLength}></input>
+        <input value={this.props.val} type="text" onChange={this.props.changeLength}></input>
         {this.props.children}
         </div>
     )
